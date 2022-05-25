@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Кошелек</string>
+    <string name="app_name_for_logo">Кошелёк: скидочные карты</string>
+    <string name="tagline">Храните все скидочные\nкарты в одном месте</string>
+    <string name="welcomeText">Добро\nпожаловать!</string>
+</resources>

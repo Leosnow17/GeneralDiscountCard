@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context=".LoginActivity"
+    tools:ignore="ExtraText">
+
+
+    <ImageView
+        android:id="@+id/imageViewBackgroundEmissive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/rectbackgroundemissive" />
+
+    \/ Шапка, приветствие
+
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="71sp"
+        android:layout_marginEnd="46sp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="@string/welcomeText"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+    /\ Шапка, приветствие
+
+    \/ Текст для имени
+    <ImageView
+        android:id="@+id/imageViewNameTextBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="41sp"
+        android:layout_marginTop="56sp"
+        android:layout_marginEnd="41sp"
+        android:backgroundTint="@color/white"
+        android:minHeight="54sp"
+        app:srcCompat="@drawable/standart_edit_text" />
+
+    <ImageView
+        android:id="@+id/imageViewAccountIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewHeader"
+        android:layout_marginLeft="61sp"
+        android:layout_marginTop="72sp"
+        app:srcCompat="@drawable/accounticon" />
+
+    <EditText
+        android:id="@+id/editTextNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewNameTextBackground"
+        android:layout_alignBottom="@+id/imageViewNameTextBackground"
+        android:layout_marginLeft="99sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="55sp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="#00FF0303"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_medium"
+        android:hint="Имя"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        tools:ignore="TouchTargetSizeCheck" />
+    /\ Текст для имени
+
+<!--    \/ Текст для email-->
+<!--    <ImageView-->
+<!--        android:id="@+id/imageViewEmailBackground"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/imageViewNameTextBackground"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="41sp"-->
+<!--        android:layout_marginTop="18sp"-->
+<!--        android:layout_marginEnd="41sp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:minHeight="54sp"-->
+<!--        app:srcCompat="@drawable/standart_edit_text" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextTextEmailAddress"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@+id/imageViewEmailBackground"-->
+<!--        android:layout_alignBottom="@+id/imageViewEmailBackground"-->
+<!--        android:layout_marginLeft="99sp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:layout_marginRight="55sp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:backgroundTint="#00FF0303"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Email"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:singleLine="true"-->
+<!--        tools:ignore="TouchTargetSizeCheck"-->
+<!--        android:fontFamily="@font/quicksand_medium"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageViewEmail"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/imageViewNameTextBackground"-->
+<!--        android:layout_marginLeft="61sp"-->
+<!--        android:layout_marginTop="33sp"-->
+<!--        app:srcCompat="@drawable/email_icon" />-->
+<!--    /\ Текст для email-->
+
+    \/ Текст для пароля
+    <ImageView
+        android:id="@+id/imageViewPasswordBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewNameTextBackground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="41sp"
+        android:layout_marginTop="18sp"
+        android:layout_marginEnd="41sp"
+        android:minHeight="54sp"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/standart_edit_text" />
+
+    <EditText
+        android:id="@+id/editTextTextPasswordAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewPasswordBackground"
+        android:layout_alignBottom="@+id/imageViewPasswordBackground"
+        android:layout_marginLeft="99sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="55sp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/open_password"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_medium"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:minHeight="48sp"
+        android:singleLine="true"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewNameTextBackground"
+        android:layout_marginLeft="61sp"
+        android:layout_marginTop="33sp"
+        app:srcCompat="@drawable/newpassicon" />
+    /\ Текст для пароля
+
+    \/ Кнопка регистрации
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewPasswordBackground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="72sp"
+        android:layout_marginLeft="72sp"
+        android:layout_marginTop="72sp"
+        android:layout_marginEnd="72sp"
+        android:layout_marginRight="72sp"
+        android:background="@drawable/standart_button"
+        android:elevation="6dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:shadowColor="@color/black"
+        android:stateListAnimator="@animator/button_elevation"
+        android:text="Войти"
+        android:translationZ="4dp" />
+    /\ Кнопка регистрации
+
+    \/ Текст под кнопкой
+
+    <TextView
+        android:id="@+id/textViewUnderRegistrationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="9sp"
+        android:text="Еще нет аккаунта?"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUnderRegistrationButton"
+        android:layout_marginLeft="8sp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+    /\ Текст под кнопкой
+</RelativeLayout>
