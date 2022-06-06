@@ -1,4 +1,4 @@
-package com.example.generaldiscountcard
+package com.example.cardholderapp
 
 import org.junit.Test
 

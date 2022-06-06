@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText"
+    android:background="@drawable/background_login">
+
+    <ImageView
+        android:id="@+id/imageViewBackgroundEmissive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/rectbackgroundemissive" />
+
+    \/ Кнопка меню
+    <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24sp"
+        android:layout_marginTop="24sp"
+        app:srcCompat="@drawable/menu_icon" />
+    /\ Кнопка меню
+
+    \/ Текст "Карты"
+    <TextView
+        android:id="@+id/text_Cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Карты"
+        android:layout_below="@id/menu_icon"
+        android:layout_marginLeft="24sp"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/quicksand_bold"
+        android:textSize="36sp"
+        android:textColor="@color/black"/>
+    /\ Текст "Карты"
+
+    \/ Дополнительный слой, в который мы будем добавлять карты
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_Cards"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+    /\ Дополнительный слой, в который мы будем добавлять карты
+
+    \/ Кнопка "Добавить новую карту"
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24sp"
+        android:background="@drawable/standart_button"
+        android:fontFamily="@font/quicksand_regular"
+        android:stateListAnimator="@animator/button_elevation"
+        android:text="Добавить новую карту"
+        android:textAllCaps="false" />
+
+<!--    <Button-->
+<!--        android:id="@+id/button1"-->
+<!--        android:layout_width="312dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginBottom="24sp"-->
+<!--        android:text="аылвоадвы"-->
+<!--        android:fontFamily="@font/quicksand_regular"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:background="@drawable/standart_button"-->
+<!--        android:stateListAnimator="@animator/button_elevation"/>-->
+    /\ Кнопка "Добавить новую карту"
+</RelativeLayout>

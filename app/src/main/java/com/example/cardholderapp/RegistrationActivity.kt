@@ -47,7 +47,7 @@ class RegistrationActivity : AppCompatActivity() {
             if (!isReg) {
                 dbManager.insertToTableUser(edLogin.text.toString(), edPass.text.toString())
                 dbManager.closeDb()
-                val intent = Intent(this, LoginActivity::class.java)
+                val intent = Intent(this, CardsActivity::class.java)
                 startActivity(intent)
             }
             dbManager.closeDb()

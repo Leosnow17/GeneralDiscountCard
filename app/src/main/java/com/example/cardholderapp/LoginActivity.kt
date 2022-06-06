@@ -28,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
             for(user in userList) {
                 if (edLogin.text.toString() == user.first && edPass.text.toString() == user.second) {
                     isNotLog = false
-                    val intent = Intent(this, RegistrationActivity::class.java)
+                    val intent = Intent(this, CardsActivity::class.java)
                     startActivity(intent)
                     break
                 }
